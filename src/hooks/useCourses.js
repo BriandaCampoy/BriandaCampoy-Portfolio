@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import getData from './getData';
-const JSON = '../../data/schools.json';
+// const JSON = '../../data/schools.json';
+const JSON = 'schools'
 
 const useCourses = () => {
   const [courses, setCourses] = useState([]);

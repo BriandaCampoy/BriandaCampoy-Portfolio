@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import getData from './getData';
-const JSON = '../../data/technologies.json';
+// const JSON = '../../data/projects.json';
+const JSON = 'technologies';
 
 const useTechnologies = () => {
   const [technologies, setTechnologies] = useState([]);
