@@ -1,0 +1,53 @@
+.main{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  background-color: var(--background-color); 
+  flex-direction: row-reverse;
+}
+
+.main__content{
+  /* max-width:1200px; */
+  /* max-height: 30vw;
+  overflow-y: scroll;
+  scrollbar-width: none; */
+  overflow: scroll;
+  /* display: block; */
+  height: 70vh;
+  min-height: 490px;
+}
+
+.main__text{
+  font-family: 'NintendoFont';
+  font-size: var(--mdDsk);
+  margin: 50px;
+  text-align: justify;
+}
+.main__technologies{
+  display:flex;
+  justify-content:center;
+}
+.main__technologies__content{
+  display:flex;
+  gap:50px;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin-bottom: 50px;
+  width:1000px;
+}
+.img__technology-container{
+  background-color: var(--white);
+  border-radius: 10%;
+  box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.25);
+}
+.img__technology{
+  width:100px;
+  height:100px;
+}
+.main__technologies__content div{
+  padding: 10px;
+}
+.figma{
+  background-color: #242424;
+}

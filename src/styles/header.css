@@ -1,0 +1,36 @@
+.header-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  height: 40vh;
+
+  /* background-color: #833840;
+  opacity: 1;
+  background-image:  linear-gradient(30deg, #3b465d 12%, transparent 12.5%, transparent 87%, #3b465d 87.5%, #3b465d), linear-gradient(150deg, #3b465d 12%, transparent 12.5%, transparent 87%, #3b465d 87.5%, #3b465d), linear-gradient(30deg, #3b465d 12%, transparent 12.5%, transparent 87%, #3b465d 87.5%, #3b465d), linear-gradient(150deg, #3b465d 12%, transparent 12.5%, transparent 87%, #3b465d 87.5%, #3b465d), linear-gradient(60deg, #3b465d77 25%, transparent 25.5%, transparent 75%, #3b465d77 75%, #3b465d77), linear-gradient(60deg, #3b465d77 25%, transparent 25.5%, transparent 75%, #3b465d77 75%, #3b465d77);
+  background-size: 42px 74px;
+  background-position: 0 0, 0 0, 21px 37px, 21px 37px, 0 0, 21px 37px; */
+  /*background-attachment: fixed;*/
+}
+.header__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 10px;
+
+  /* width: 268px;
+  height: 158px; */
+
+  background: var(--secondary-color);
+  border-radius: 10px;
+}

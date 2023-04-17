@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'NintendoFont';
+  src: url('./assets/fonts/FOTRodinM.otf');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'NintendoFontBold';
+  src: url('./assets/fonts/FOTRodinDB.otf');
+  font-style: normal;
+  font-weight: 700;
+  /* src: url('./assets/fonts/FOTRodin\ Pro\ EB.otf'); */
+  /* src: url('./assets/fonts/FOTRodin\ Pro\ UB.otf'); --Muy bold*/
+}
+@font-face {
+  font-family: 'NintendoFontThin';
+  src: url('./assets/fonts/FOTRodinL.otf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+:root {
+  --secondary-color: rgb(38, 50, 75);
+  --secondary-darkcolor: rgb(15, 17, 32);
+  --primary-color: rgb(118, 35, 43);
+  --primary-darkcolor: rgb(78, 11, 18);
+  --background-color: rgb(215, 214, 212);
+  --background-darkcolor: rgb(106, 97, 95);
+  --black: #000;
+  --white: #fff;
+
+  --h1Mov: 20px;
+  --xlMov: 24px;
+  --lgMov: 18px;
+  --mdMov: 14px;
+  --smMov: 12px;
+
+  --h1Dsk: 30px;
+  --lgDsk: 24px;
+  --mdDsk: 20px;
+  --smDsk: 16px;
+
+  --ElementSizeXL: 150px;
+  --ElementSizeL: 110px;
+  --ElementSizeS: 80px;
+}
+body {
+  /**Normal way*/
+  /* background-color: #833840;
+  opacity: 1;
+  background-image: linear-gradient(
+      30deg,
+      #3b465d 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #3b465d 87.5%,
+      #3b465d
+    ),
+    linear-gradient(
+      150deg,
+      #3b465d 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #3b465d 87.5%,
+      #3b465d
+    ),
+    linear-gradient(
+      30deg,
+      #3b465d 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #3b465d 87.5%,
+      #3b465d
+    ),
+    linear-gradient(
+      150deg,
+      #3b465d 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #3b465d 87.5%,
+      #3b465d
+    ),
+    linear-gradient(
+      60deg,
+      #3b465d77 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #3b465d77 75%,
+      #3b465d77
+    ),
+    linear-gradient(
+      60deg,
+      #3b465d77 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #3b465d77 75%,
+      #3b465d77
+    );
+  background-size: 42px 74px;
+  background-position: 0 0, 0 0, 21px 37px, 21px 37px, 0 0, 21px 37px;
+  background-attachment: fixed; */
+
+  /*TryRakka*/
+  background-color: var(--primary-color);
+  opacity: 1;
+  background-image: linear-gradient(
+      30deg,
+      var(--secondary-color) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      var(--secondary-color) 87.5%,
+      var(--secondary-color)
+    ),
+    linear-gradient(
+      150deg,
+      var(--secondary-color) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      var(--secondary-color) 87.5%,
+      var(--secondary-color)
+    ),
+    linear-gradient(
+      30deg,
+      var(--secondary-color) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      var(--secondary-color) 87.5%,
+      var(--secondary-color)
+    ),
+    linear-gradient(
+      150deg,
+      var(--secondary-color) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      var(--secondary-color) 87.5%,
+      var(--secondary-color)
+    ),
+    linear-gradient(
+      60deg,
+      var(--secondary-darkcolor) 25%,
+      transparent 25.5%,
+      transparent 75%,
+      var(--secondary-darkcolor) 75%,
+      var(--secondary-darkcolor)
+    ),
+    linear-gradient(
+      60deg,
+      var(--secondary-darkcolor) 25%,
+      transparent 25.5%,
+      transparent 75%,
+      var(--secondary-darkcolor) 75%,
+      var(--secondary-darkcolor)
+    );
+  background-size: 42px 74px;
+  background-position: 0 0, 0 0, 21px 37px, 21px 37px, 0 0, 21px 37px;
+  background-attachment: fixed;
+  /* height:110vh;
+  overflow:hidden; */
+}
+
+/*fonts*/
+.header__title .name {
+  color: var(--background-color);
+  font-family: NintendoFontBold;
+  font-size: var(--h1Dsk);
+}
+.header__title .speciality {
+  color: var(--background-color);
+  font-family: NintendoFont;
+  font-size: var(--lgDsk);
+}
+
+.font-lg {
+  color: var(--secondary-darkcolor);
+  font-family: NintendoFontBold;
+  font-size: var(--lgDsk);
+  text-decoration: none;
+  margin: 30px 50px;
+}
+.font-md {
+  color: var(--secondary-darkcolor);
+  font-family: NintendoFont;
+  font-size: var(--mdDsk);
+  text-decoration: none;
+  /* margin:30px 50px; */
+}
+.font-sm {
+  color: var(--secondary-darkcolor);
+  font-family: NintendoFont;
+  font-size: var(--smDsk);
+  text-decoration: none;
+  margin: 30px 50px 80px 50px;
+  text-align: justify;
+}
+
+/*others*/
+.errorContent {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eCenter {
+  width: 30%;
+  height: 30%;
+}
+.e404 {
+  color: var(--background-color);
+  font-family: NintendoFontBold;
+  font-size: 120px;
+  /* margin:auto 0; */
+}
+.stop{
+  overflow:hidden;
+}
+
+
+/*selector*/
+.itemSelector {
+  position: absolute;
+  width: calc(var(--ElementSizeL) * 1.3);
+  height: calc(var(--ElementSizeL) * 1.3);
+  opacity: 0;
+}
+.itemSelector:hover {
+  opacity: 1;
+}
+.selector {
+  position: absolute;
+  /* width: calc(var(--ElementSizeL) * 1.3);
+  height: calc(var(--ElementSizeL) * 1.3); */
+  opacity: 0;
+}
+.selector:hover {
+  opacity: 1;
+}
+.modalSelector {
+  width: calc(var(--ElementSizeS) * 1.3);
+  height: calc(var(--ElementSizeS) * 1.3);
+}
+/*button*/
+button {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  border: 3px solid var(--secondary-color);
+  font-family: NintendoFont;
+  font-size: var(--lgDsk);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button:active {
+  background-color: var(--secondary-darkcolor);
+}
+.btn-secondary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--background-color);
+  border-radius: 10px;
+  font-family: NintendoFont;
+  font-size: var(--mdDsk);
+}
+.btn-secondary:active{
+  background: var(--primary-darkcolor)
+}
+.back {
+  width: 100%;
+  border-radius: 10px;
+  position: fixed;
+  bottom: -10px;
+  left: 0;
+}
+.Layout{
+  /* background:rgba(255, 255, 255, 0.10); */
+  backdrop-filter: contrast(80%);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .element__content {
+    width: var(--ElementSizeXL);
+    height: var(--ElementSizeXL);
+  }
+  .element {
+    width: calc(150px * 0.8);
+    height: calc(150px * 0.8);
+  }
+}

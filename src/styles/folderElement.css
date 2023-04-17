@@ -1,0 +1,61 @@
+.folder-Element {
+  position: relative;
+  width: var(--ElementSizeL);
+  height: var(--ElementSizeL);
+}
+.folder-content:hover .folder-selector {
+  opacity: 1;
+}
+.folder-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.folder__tab {
+  position: absolute;
+  left: 0%;
+  right: 60%;
+  top: 7.41%;
+  bottom: 83.33%;
+  background: var(--secondary-darkcolor);
+  border-radius: 5px 10px 0px 0px;
+}
+.folder__page {
+  position: absolute;
+  width: calc(var(--ElementSizeL) * 0.6);
+  height: calc(var(--ElementSizeL) * 0.6);
+  left: 33px;
+  right: 0;
+  top: 10px;
+  bottom: 0;
+  background: var(--primary-darkcolor);
+  transform: matrix(0.32, 0.95, -0.96, 0.28, 0, 0);
+}
+.folder__face {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 16.67%;
+  bottom: 0%;
+  background: var(--secondary-color);
+  border-radius: 0px 5px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.folder__face__icon {
+  width: calc(var(--ElementSizeL) * 0.7);
+  height: calc(var(--ElementSizeL) * 0.7);
+}
+
+@media (max-width: 640px) {
+  .folder-Element{
+    width: var(--ElementSizeXL);
+    height: var(--ElementSizeXL);
+  }
+  .folder-Element .folder__face__icon{
+    width: calc(var(--ElementSizeXL) * 0.7);
+    height: calc(var(--ElementSizeXL) * 0.7);
+  }
+
+}

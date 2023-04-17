@@ -1,0 +1,93 @@
+.modalSlideColor {
+  background-color: var(--secondary-darkcolor);
+  border-radius: 10px 0 0 10px;
+  height: 450px;
+}
+.modal__slide {
+  /* display:grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(3,1fr); */
+  position: relative;
+  height: 60vh;
+  max-height: 510px;
+  /* margin: 0 0 20px 20px; */
+  /* max-width: 90vw; */
+  /* overflow-x: hidden; */
+  grid-auto-rows: var(--ElementSizeS);
+  grid-auto-columns: calc(var(--ElementSizeS) * 1.3);
+  justify-items: center;
+  /* overflow-y: auto;
+  scroll-behavior: smooth; */
+  /* white-space: nowrap; */
+}
+.modal__element__content {
+  width: var(--ElementSizeS);
+  height: var(--ElementSizeS);
+  background-color: var(--primary-darkcolor);
+  border-radius: 10%;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal_empty__content {
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--ElementSizeS);
+  height: var(--ElementSizeS);
+}
+.modal__element {
+  width: calc(var(--ElementSizeS) * 0.8);
+  height: calc(var(--ElementSizeS) * 0.8);
+  background-color: var(--white);
+}
+
+.modal__empty__element {
+  width: calc(var(--ElementSizeS) * 0.3);
+  height: calc(var(--ElementSizeS) * 0.3);
+  border-radius: 10px;
+  background-color: var(--background-color);
+}
+
+.modal__arrow {
+  width: 37.72px;
+  height: 137.87px;
+  position: absolute;
+  top: 30%;
+}
+.right {
+  right: 0;
+}
+.left {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 640px) {
+  .modal__element__content {
+    width: var(--ElementSizeL);
+    height: var(--ElementSizeL);
+    background-color: var(--primary-darkcolor);
+    border-radius: 10%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal__element__content .modal__element{
+    width: calc(var(--ElementSizeL) * 0.8);
+    height: calc(var(--ElementSizeL) * 0.8);
+  }
+  .modal__element__content .modalSelector, .modal_empty__content .modalSelector {
+    height: calc(var(--ElementSizeL) * 1.3);
+    width: calc(var(--ElementSizeL) * 1.3);
+  }
+  .modal__slide .galerie__content{
+    height: 50vh;
+  }
+
+  :root {
+    --ElementSizeS: 110px;
+  }
+}

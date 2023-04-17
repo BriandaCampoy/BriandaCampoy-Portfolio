@@ -1,0 +1,71 @@
+.themeSelector-container{
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.350);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+.theme__icon{
+  height:32px;
+  width: 32px;
+}
+.themeSelector{
+  background-color: var(--background-color);
+  width: 30vw;
+  border-radius: 10px;
+  padding:20px;
+  position: relative;
+  min-width: 300px;
+}
+.theme{
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.themeSelector__title{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.theme__name{
+  color: var(--secondary-darkcolor);
+  font-family: NintendoFont;
+  font-size: var(--smDsk);
+  text-decoration: none;
+  text-align: center;
+}
+.barColors{
+  display: flex;
+  justify-content: center;
+  border: solid 1px var(--background-darkcolor);
+  border-radius: 50px;
+  overflow: hidden;
+  width: min-content;
+  margin: 0 auto;
+}
+.barColor{
+  width: 3vw;
+  min-width:30px;
+  height: 50px;
+}
+.closeThemeSelector{
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 7px 0 10px;
+}
+.closeThemeSelector img{
+  width:32px;
+  height:32px;
+}

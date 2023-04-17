@@ -1,0 +1,145 @@
+nav{
+  display: grid;
+  grid-template-columns: 157px 1fr 157px;
+  grid-template-rows: 1fr;
+  /* height:5vh; */
+  height:70px;
+  /* height:7vh; */
+}
+.navAlternative{
+  display: block;
+}
+.NavOpcional{
+  pointer-events: none;
+}
+nav > div{
+  align-items: center;
+}
+.homesettings{
+  width: 157px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+}
+
+.homesettings .icon{
+  width: 60px;
+  height: 60px;
+}
+.size img{
+  width: 64px;
+  height: 64px;
+}
+.nav__sections{
+  background-color:var(--primary-color);
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  height:70px;
+}
+.sizing{
+  display:flex;
+  justify-content:space-evenly;
+  align-items: center;
+  background-color: var(--secondary-color);
+}
+.navAlternative .navSelector, .navAlternative .navSelector--selected{
+  margin-top: -2.5px;
+  margin-left: -6px;
+}
+nav .icon{
+  width: 64px;
+  height: 64px;
+  color:var(--background-color);
+}
+nav a, .navIcon{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+}
+.selected{
+  position:absolute; 
+  width:calc(var(--ElementSizeL)*1.3);
+  height:calc(var(--ElementSizeL)*1.3);
+  opacity: 1;
+}
+.navSelector--selected{
+  position: absolute;
+  margin-top: 2.5px;
+  margin-left: 1px;
+}
+.navSelector {
+  position: absolute;
+  opacity: 0;
+  margin-top: 2.5px;
+  margin-left: 1px;
+}
+.navSelector:hover {
+  opacity: 1;
+}
+a{
+  text-decoration: none;
+}
+@media (max-width: 640px) {
+  .navIcon, nav a{
+      width: 40px;
+      height: 40px;
+  }
+  .navSelector--selected{
+    width: 45px;
+    height: 45px;
+  }
+  .selector{
+      width:calc(var(--ElementSizeS)*1.3);
+      height:calc(var(--ElementSizeS)*1.3);
+  }
+  nav .icon{
+      width: 40px;
+      height: 40px;
+  }
+  .homesettings{
+      width: 80px;
+      height: 45px;;
+  }
+  .homesettings .icon{
+      width: 35px;
+      height: 35px;
+  }
+  nav{
+      height:45px;
+  }
+  .navSelector{
+      width: 45px;
+      height:45px;
+      margin-top: 0.5px;
+      margin-left: 1px;
+  }
+  .size img{
+      width: 40px;
+      height: 40px;
+  }
+  nav{
+      grid-template-columns: 80px 1fr 80px;
+  }
+  .navAlternative .navSelector{
+    margin-left: -1.5px;
+    margin-top: -1.5px;
+  }
+  .navAlternative .navSelector--selected{
+    margin-left: -1.5px;
+    margin-top: -1.5px;
+  } 
+  .element__content {
+      width: 150px;
+      height: 150px;
+  }
+  .element{
+      width:calc(150px*.8);
+      height: calc(150px*.8)
+  }
+
+}
