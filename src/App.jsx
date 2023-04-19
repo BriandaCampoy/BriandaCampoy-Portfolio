@@ -13,8 +13,8 @@ function App() {
       <HashRouter>
         <Layout>
           <Routes>
-            <Route exact path="/projects/:name/:section" element={<Project/>}/>
-            <Route exact path="/courses/:name/:section" element={<Course/>}/>
+            <Route exact path="/projects/:id/:section" element={<Project/>}/>
+            <Route exact path="/courses/:id/:section" element={<Course/>}/>
             <Route exact path="/courses" element={<Schools />}/>
             <Route exact path="/projects" element={<Projects />}/>
             <Route exact path="/contact" element={<Contact />}/>

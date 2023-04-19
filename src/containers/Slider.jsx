@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import React, { useRef } from 'react';
 import '@styles/slider.css';
 import Element from '../Components/Element';
 import Folder from '../Components/Folder';
@@ -20,7 +19,6 @@ const Slider = ({ elements, hoverElement }) => {
       });
     }
   }
-  const { pathname } = useLocation();
   return (
     <div className="iframe">
       <section className="galerie__content">
@@ -32,22 +30,10 @@ const Slider = ({ elements, hoverElement }) => {
                   <Folder  key={element.group} group={element} hover={hoverElement} />
                 )}
                 {!element.group && (
-                  <NavLink
-                    to={{
-                      pathname: `${pathname}/${element.name}/${
-                        element.institution != undefined
-                          ? 'certifications'
-                          : 'information'
-                      }`,
-                      state: { element: element }
-                    }}
-                    onMouseOver={() => hoverElement(element)}
-                  >
                     <Element
-                      img={element.icon}
-                      name={element.name}
+                      element={element}
+                      onMouseOver={hoverElement}
                     />
-                  </NavLink>
                 )}
               </div>
             ))}

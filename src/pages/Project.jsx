@@ -7,9 +7,9 @@ import NavProject from '@components/NavProject';
 import SwitchProjectSections from '@containers/SwitchProjectSections';
 
 const Project = () => {
-  const { name, section } = useParams();
-  const { getProjectByName } = useProjects();
-  const project = getProjectByName(name);
+  const { id, section } = useParams();
+  const { getProjectById } = useProjects();
+  const project = getProjectById(id);
   return (
     <>
       <Header>

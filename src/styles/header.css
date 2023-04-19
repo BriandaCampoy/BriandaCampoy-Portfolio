@@ -12,6 +12,7 @@ header {
   justify-content: center;
   /* align-items: center; */
   height: 40vh;
+  backdrop-filter: contrast(80%);
 
   /* background-color: #833840;
   opacity: 1;

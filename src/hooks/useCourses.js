@@ -13,8 +13,8 @@ const useCourses = () => {
     });
   }, []);
 
-  function getCourseByName(name) {
-    const courseFind = courses.find((course) => course.name === name);
+  function getCourseById(name) {
+    const courseFind = courses.find((course) => course.id == name);
     if (courseFind) {
       return courseFind;
     } else {
@@ -31,7 +31,7 @@ const useCourses = () => {
     return schools.find((schools) => schools.id === id);
   }
 
-  return { courses, getCourseByName, getSchoolById };
+  return { courses, getCourseById, getSchoolById };
 };
 
 export default useCourses;

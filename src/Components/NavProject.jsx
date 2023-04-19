@@ -4,7 +4,7 @@ import { useLocation, useParams } from 'react-router-dom';
 
 const NavProject = () => {
   const {pathname} = useLocation()
-  const {name} = useParams()
+  const {id} = useParams()
   return (
     <nav className="navAlternative">
       <ul className="nav__sections">
@@ -13,8 +13,8 @@ const NavProject = () => {
             name="projectInfo"
             className="icon"
             img="https://res.cloudinary.com/dtn1pnbmu/image/upload/v1659479729/portfolio/assets/icons/bxs-info-square_ht4i65.svg"
-            destination={`/projects/${name}/information`}
-            selected={pathname===`/projects/${name.replaceAll(' ','%20')}/information`}
+            destination={`/projects/${id}/information`}
+            selected={pathname===`/projects/${id}/information`}
          />
         </li>
         <li>
@@ -22,8 +22,8 @@ const NavProject = () => {
             name="projectImages"
             className="icon"
             img="https://res.cloudinary.com/dtn1pnbmu/image/upload/v1659479729/portfolio/assets/icons/bxs-image_qkbctj.svg"
-            destination={`/projects/${name}/images`}
-            selected={pathname===`/projects/${name.replaceAll(' ','%20')}/images`}
+            destination={`/projects/${id}/images`}
+            selected={pathname===`/projects/${id}/images`}
           />
         </li>
         <li>
@@ -31,8 +31,8 @@ const NavProject = () => {
             name="projectTechnologies"
             className="icon"
             img="https://res.cloudinary.com/dtn1pnbmu/image/upload/v1659479720/portfolio/assets/icons/bx-code_hy9mnw.svg"
-            destination={`/projects/${name}/technologies`}
-            selected={pathname===`/projects/${name.replaceAll(' ','%20')}/technologies`}
+            destination={`/projects/${id}/technologies`}
+            selected={pathname===`/projects/${id}/technologies`}
           />
         </li>
         <li>
@@ -40,8 +40,8 @@ const NavProject = () => {
             name="projectRepositorie"
             className="icon"
             img="https://res.cloudinary.com/dtn1pnbmu/image/upload/v1659479723/portfolio/assets/icons/bxl-github_fv5rvh.svg"
-            destination={`/projects/${name}/repositories`}
-            selected={pathname===`/projects/${name.replaceAll(' ','%20')}/repositories`}
+            destination={`/projects/${id}/repositories`}
+            selected={pathname===`/projects/${id}/repositories`}
           />
         </li>
       </ul>

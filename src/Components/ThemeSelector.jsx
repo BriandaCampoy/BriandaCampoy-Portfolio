@@ -16,7 +16,7 @@ const ThemeSelector = ({closeThemeSelector}) => {
         </div>
         <div className="themeSelector__themes">
           {themes.map((theme) => (
-            <Theme theme={theme} />
+            <Theme theme={theme} key={theme.name}/>
           ))}
         </div>
       <div className="closeThemeSelector" onClick={closeThemeSelector}>

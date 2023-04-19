@@ -102,7 +102,7 @@ const schools ={
   "schools": [
     {
       "id": 0,
-      "institution": "Instituto tecnolgico de Sonora",
+      "institution": "Instituto Tecnológico de Sonora",
       "icon": "https://res.cloudinary.com/dtn1pnbmu/image/upload/v1657844042/portfolio/assets/img_school/itson_pu3675.png",
       "aboutTheInstitution":"## Mission\n\n The Technological Institute of Sonora is a public, autonomous, and socially committed university that aims to train professionals with ethics, integrity, international competence, entrepreneurial skills, and empathy towards social reality, using innovative and inclusive educational models. The Institute transfers the benefits of science, technology, health, environmental care, culture, and sports to society; evolves and innovates in generating solutions to environmental problems, economic development, and well-being, with an efficient and transparent management model based on harmony, justice, and balance that contributes to improving the quality of life of its members and impacts the sustainable and intercultural development of the country.\n\n  ## Vision \n\n To be a university that contributes to improving human quality and national and global development, recognized internationally for the relevant contributions to science, technology, sports, art, and culture made by students, academic and administrative staff, alumni, and other external interest groups, by linking up to build opportunities in dynamic and complex contexts.",
       "webSite": "https://www.itson.mx/Paginas/index.aspx",
@@ -141,7 +141,7 @@ const schools ={
     {
     "id":0,
     "institution":0,
-    "name":"Ingenieria en Software",
+    "name":"Ingeniería de software",
     "icon":"https://res.cloudinary.com/dtn1pnbmu/image/upload/v1681507848/portfolio/assets/img_school/iswIcon_kuivo3.jpg",
     "aboutTheCourse": "## Program Objective\nTo train integral professionals who are committed to their work, innovative, entrepreneurial, and capable of efficiently developing competitive software in the international market, contributing to the growth and progress of society through a competency-based educational model.\n\n## Specific Competencies\n* Design software by applying appropriate methodologies, tools, and standards to the problem.\n* Build software from design specifications, using best practices to ensure product quality.\n* Manage software development projects by applying processes, models, and standards that contribute to the total quality of the product.\n\n## Generic Competencies\n* Face everyday and contingent situations based on the recognition and application of their abilities in an objective understanding of the environment to influence their personal well-being and that of their community effectively and ethically.\n* Join the development process of their community through concrete actions aimed at social transformation based on the practice of solidary attitudes and a critical and pluralistic vision of the context in which they are immersed.\n* Develop economic, social, and/or cultural initiatives by designing and implementing innovative actions and projects aimed at creating opportunities and solving problems within a company or the community.\n* Apply pertinent and current knowledge, methods, techniques, and technological resources to achieve an adequate performance in complex socio-professional contexts and promote their mobility and professional adaptation.\n\n## Professional Performance Areas\n* Design of software solutions.\n* Analysis of software requirements.\n* Construction of software applications.\n* Software testing.\n* Administration of software development projects.",
     "certifications": [
@@ -161,7 +161,7 @@ const schools ={
   {
     "id":2,
     "institution":2,
-    "name":"Fundamentos de Ingenieria de Software",
+    "name":"Fundamentos de Ingeniería de Software",
     "icon":"https://static.platzi.com/media/achievements/badge-ing-software-2017-18f503fd-36bd-42d8-b1a1-492865659687.png",
     "aboutTheCourse": "",
     "certifications": ["https://res.cloudinary.com/dtn1pnbmu/image/upload/v1681599529/portfolio/assets/img_school/Platzi/diploma-ingenieria_page-0001_gjm5rz.jpg"]
@@ -182,7 +182,7 @@ const schools ={
       {
         "id":4,
         "institution":2,
-        "name":"Curso Practico de React.js",
+        "name":"Curso Práctico de React.js",
         "icon":"https://static.platzi.com/media/achievements/piezas-reactjs-badge-1-52e950ac-c75c-40f5-94e0-8b6cab392ed2.png",
         "aboutTheCourse": "",
         "certifications": ["https://res.cloudinary.com/dtn1pnbmu/image/upload/v1681599532/portfolio/assets/img_school/Platzi/diploma-react-practico_page-0001_b53dvu.jpg"]
@@ -198,7 +198,7 @@ const schools ={
       {
         "id":6,
         "institution":2,
-        "name":"Curso de Introduccion a React.js",
+        "name":"Curso de Introducción a React.js",
         "icon":"https://static.platzi.com/media/achievements/badge-react-2018-0a41bdc5-e874-45c9-ac67-98294c898da4.png",
         "aboutTheCourse": "",
         "certifications": ["https://res.cloudinary.com/dtn1pnbmu/image/upload/v1681601013/portfolio/assets/img_school/Platzi/diploma-react_page-0001_xnkufe.jpg"]
@@ -774,7 +774,7 @@ const projects= {
         "https://res.cloudinary.com/dtn1pnbmu/image/upload/v1681696648/portfolio/assets/img_projects/Patolli/patolli2_o9ehxw.png"
       ],
       "Technologies": [0],
-      "GithubRepository": "https://github.com/BriandaCampoy/tablero",
+      "GithubRepository": "",
       "FigmaDesign": "",
       "Collaborators": ["", ""],
       "deploy": ""
@@ -878,7 +878,7 @@ const projects= {
       "GithubRepository": "https://github.com/BriandaCampoy/CatsApi",
       "FigmaDesign": "",
       "Collaborators": ["", ""],
-      "deploy": "https://github.com/BriandaCampoy/CatsApi"
+      "deploy": "https://briandacampoy.github.io/CatsApi/"
     },
     {
       "id": 12,
@@ -919,7 +919,7 @@ const projects= {
       "description": "",
       "images": ["https://res.cloudinary.com/dtn1pnbmu/image/upload/v1681696753/portfolio/assets/img_projects/Asynclanding_z9zgj7.png"],
       "Technologies": [1,3],
-      "GithubRepository": "https://github.com/BriandaCampoy/async-landing",
+      "GithubRepository": "",
       "FigmaDesign": "",
       "Collaborators": ["", ""],
       "deploy": "https://briandacampoy.github.io/async-landing/"
@@ -1018,7 +1018,7 @@ const projects= {
       "description": "",
       "images": ["https://res.cloudinary.com/dtn1pnbmu/image/upload/v1681696603/portfolio/assets/img_projects/RmApi_zh3yxz.png"],
       "Technologies": [1,2,7],
-      "GithubRepository": "",
+      "GithubRepository": "https://github.com/BriandaCampoy/ReactHooksPractice",
       "FigmaDesign": "",
       "Collaborators": ["", ""],
       "deploy": "https://react-hooks-practice-theta.vercel.app/"

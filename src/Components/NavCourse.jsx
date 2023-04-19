@@ -4,7 +4,7 @@ import { useLocation, useParams } from 'react-router-dom';
 
 const NavCourse = () => {
   const {pathname} =useLocation()
-  const {name} = useParams()
+  const {id} = useParams()
   return (
     <nav className="navAlternative">
       <ul className="nav__sections">
@@ -13,8 +13,8 @@ const NavCourse = () => {
             name="courseCertifications"
             className="icon"
             img="https://res.cloudinary.com/dtn1pnbmu/image/upload/v1659479731/portfolio/assets/icons/bxs-id-card_myetof.svg"
-            destination={`/courses/${name}/certifications`}
-            selected={pathname===`/courses/${name.replaceAll(' ','%20')}/certifications`}
+            destination={`/courses/${id}/certifications`}
+            selected={pathname===`/courses/${id}/certifications`}
           />
         </li>
         <li>
@@ -22,8 +22,8 @@ const NavCourse = () => {
             name="courseCertifications"
             className="icon"
             img="https://res.cloudinary.com/dtn1pnbmu/image/upload/v1659479725/portfolio/assets/icons/bxs-book-content_i8yev1.svg"
-            destination={`/courses/${name}/aboutCourse`}
-            selected={pathname===`/courses/${name.replaceAll(' ','%20')}/aboutCourse`}
+            destination={`/courses/${id}/aboutCourse`}
+            selected={pathname===`/courses/${id}/aboutCourse`}
           />
         </li>
         <li>
@@ -31,8 +31,8 @@ const NavCourse = () => {
             name="courseCertifications"
             className="icon"
             img="https://res.cloudinary.com/dtn1pnbmu/image/upload/v1659479729/portfolio/assets/icons/bxs-school_duws2m.svg"
-            destination={`/courses/${name}/aboutInstitution`}
-            selected={pathname===`/courses/${name.replaceAll(' ','%20')}/aboutInstitution`}
+            destination={`/courses/${id}/aboutInstitution`}
+            selected={pathname===`/courses/${id}/aboutInstitution`}
           />
         </li>
       </ul>

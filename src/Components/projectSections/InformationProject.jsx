@@ -10,7 +10,7 @@ const InformationProject = ({ project }) => {
         <p className="section-project font-lg">Description</p>
         <p className="title-project font-md">{project?.name}</p>
         {project?.deploy && (
-          <NavLink to={project.deploy} target='_blank'>
+          <NavLink to={project.deploy} className='deploy-project-container' target='_blank'>
             <div className="btn-secondary deploy-project">Deploy</div>
           </NavLink>
         )}

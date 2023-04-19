@@ -95,6 +95,14 @@
 .swiper, swiper-container{
   z-index: 0 !important;
 }
+.deploy-project-container{
+  display:block;
+  width: fit-content;
+  margin: 0 auto;
+}
+.deploy-project{
+  width: 300px;
+}
 
 @media (max-width: 640px) {
 

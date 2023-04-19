@@ -11,10 +11,10 @@ const useProjects = () => {
     })
   }, []);
 
-  function getProjectByName(name){
-    return projects.find((project) => project.name === name)
+  function getProjectById(name){
+    return projects.find((project) => project.id == name)
   }
-  return {projects, getProjectByName};
+  return {projects, getProjectById};
 };
 
 export default useProjects;

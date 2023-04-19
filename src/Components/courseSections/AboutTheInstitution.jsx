@@ -5,7 +5,6 @@ import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 const AboutTheInstitution = ({institution}) => {
   const {getSchoolById} = useCourses();
   const school = getSchoolById(institution)
-  console.log(school);
   return (
     <section className="main">
       <div className="main__content limitation">

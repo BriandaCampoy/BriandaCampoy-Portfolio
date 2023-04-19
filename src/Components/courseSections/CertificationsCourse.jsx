@@ -56,6 +56,7 @@ const CertificationsCourse = ({ certifications }) => {
             <img
               src={certifications[0]}
               alt=""
+              onClick={() => handleShowPhoto(certifications[0])}
             />
           )}
         </div>

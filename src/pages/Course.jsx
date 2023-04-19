@@ -7,9 +7,9 @@ import NavCourse from '../Components/NavCourse';
 import SwitchCourseSections from '../containers/SwitchCourseSections';
 
 const Course = () => {
-  const {name, section}=useParams();
-  const {getCourseByName} = useCourses()
-  const course = getCourseByName(name)
+  const {id, section}=useParams();
+  const {getCourseById} = useCourses()
+  const course = getCourseById(id)
   return (
     <>
     <Header>

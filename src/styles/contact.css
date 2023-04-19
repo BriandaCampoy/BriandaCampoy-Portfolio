@@ -23,9 +23,13 @@
 .contact-text {
   width: inherit;
   text-decoration: none;
+  display:flex;
 }
 p {
   max-width: 1200px;
+}
+.contact-text p{
+  text-align: center;
 }
 
 @media (max-width: 640px) {
@@ -40,6 +44,7 @@ p {
   }
   .contact-text {
     color: var(--background-color);
+
   }
   .main__contact {
     height: unset;
