@@ -176,6 +176,10 @@ body {
   font-size: var(--lgDsk);
 }
 
+h3{
+  font-family: NintendoFontBold;
+}
+
 .font-lg {
   color: var(--secondary-darkcolor);
   font-family: NintendoFontBold;
@@ -297,7 +301,7 @@ button:active {
     height: var(--ElementSizeXL);
   }
   .element {
-    width: calc(150px * 0.8);
-    height: calc(150px * 0.8);
+    width: calc((var(--ElementSizeXL))* 0.8);
+    height: calc((var(--ElementSizeXL)) * 0.8);
   }
 }

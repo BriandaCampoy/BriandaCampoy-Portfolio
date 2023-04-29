@@ -1,4 +1,4 @@
-.header-content{
+.header-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,4 +34,12 @@ header {
 
   background: var(--secondary-color);
   border-radius: 10px;
+}
+.header-content .element__content {
+  width: 110px;
+  height: 110px;
+}
+.header-content .element {
+  width: calc(110px * 0.8);
+  height: calc(110px * 0.8);
 }

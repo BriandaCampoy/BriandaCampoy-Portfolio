@@ -3,13 +3,25 @@
   width: var(--ElementSizeL);
   height: var(--ElementSizeL);
 }
+.folder-selector{
+  position: absolute;
+  top: -15%;
+  left: -3%;
+}
+.folder-container{
+  position: relative;
+}
 .folder-content:hover .folder-selector {
   opacity: 1;
 }
 .folder-content {
+  /* height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+
+  position: relative;
+  margin: 15px;
 }
 .folder__tab {
   position: absolute;
@@ -22,9 +34,9 @@
 }
 .folder__page {
   position: absolute;
-  width: calc(var(--ElementSizeL) * 0.6);
-  height: calc(var(--ElementSizeL) * 0.6);
-  left: 33px;
+  width: 60%;
+  height: 60%;
+  left: 20%;
   right: 0;
   top: 10px;
   bottom: 0;

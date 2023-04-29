@@ -13,6 +13,7 @@ const SliderView = ({ elements }) => {
       setElementSelected();
     }
   }
+
   return (
     <>
       <Header>

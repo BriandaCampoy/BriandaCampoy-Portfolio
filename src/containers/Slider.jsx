@@ -23,7 +23,7 @@ const Slider = ({ elements, hoverElement }) => {
     <div className="iframe">
       <section className="galerie__content">
         <div className="galerie" id="slider" ref={scroll}>
-          <div className="slide">
+          <div className="slide" id="sliderGrid">
             {elements?.map((element) => (
               <div key={element.id}>
                 {element.group && (

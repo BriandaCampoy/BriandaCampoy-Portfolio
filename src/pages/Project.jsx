@@ -10,18 +10,24 @@ const Project = () => {
   const { id, section } = useParams();
   const { getProjectById } = useProjects();
   const project = getProjectById(id);
-  return (
-    <>
-      <Header>
-        <ElementHeader element={project} />
-      </Header>
-      <NavProject />
-      <SwitchProjectSections path={section} project={project} />
-      <NavLink to={'/projects'}>
-        <button className="primary-btn back">Volver</button>
-      </NavLink>
-    </>
-  );
+  if (project) {
+    return (
+      <>
+        <Header>
+          <ElementHeader element={project} />
+        </Header>
+        <NavProject />
+        <SwitchProjectSections path={section} project={project} />
+        <NavLink to={'/projects'}>
+          <button className="primary-btn back">Volver</button>
+        </NavLink>
+      </>
+    );
+  }else{
+    return (
+      <></>
+    )
+  }
 };
 
 export default Project;

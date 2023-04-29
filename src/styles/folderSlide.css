@@ -8,7 +8,8 @@
   grid-auto-flow: column;
   grid-template-rows: repeat(3,1fr); */
   position: relative;
-  height: 60vh;
+  /* height: 49vh;
+  min-height: 300px; */
   max-height: 510px;
   /* margin: 0 0 20px 20px; */
   /* max-width: 90vw; */
@@ -85,6 +86,7 @@
   }
   .modal__slide .galerie__content{
     height: 50vh;
+    max-height: 460px;
   }
 
   :root {

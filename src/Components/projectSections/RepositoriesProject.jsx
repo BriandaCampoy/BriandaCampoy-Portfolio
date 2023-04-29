@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const RepositoriesProject = ({ project }) => {
   return (
@@ -10,7 +10,7 @@ const RepositoriesProject = ({ project }) => {
         </p>
         <div className="repositories">
           {project.GithubRepository && (
-            <NavLink to={project.GithubRepository} target="_blank">
+            <NavLink to={project?.GithubRepository} target="_blank">
               <div className="repositorie">
                 <img
                   src="https://res.cloudinary.com/dtn1pnbmu/image/upload/v1657843906/portfolio/assets/img_technologies/GitHub-Mark_iufykf.png"
@@ -31,8 +31,20 @@ const RepositoriesProject = ({ project }) => {
           )}
           {!project.FigmaDesign && !project.GithubRepository && 
           <>
-            <h3 className='font-lg'>The access to Github and Figma of this project are private or does not exist.</h3>
+            <h3 className='font-lg'>The access to GitHub and Figma from this project are either private or does not exist.</h3>
           </>
+          }
+        </div>
+        <div className="collaborators-container">
+          {project.Collaborators && 
+          <div className="collaborators">
+            {project.Collaborators.map((collaborator) =>(
+              <Link to={collaborator.profile} target="_blank" className="collaborator" key={collaborator.name}>
+                <img src={collaborator.icon} alt={collaborator.name} />
+                <p>{collaborator.name}</p>
+              </Link>
+            ))}
+          </div>
           }
         </div>
       </div>

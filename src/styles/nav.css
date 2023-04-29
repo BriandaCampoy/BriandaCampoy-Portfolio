@@ -84,6 +84,16 @@ nav a, .navIcon{
 a{
   text-decoration: none;
 }
+.disable__sizing__container{
+  width: 70px;
+  height: 70px;
+}
+/* .disable__sizing__div{
+
+} */
+.disable__sizing{
+  opacity: .8;
+}
 @media (max-width: 640px) {
   .navIcon, nav a{
       width: 40px;
@@ -141,5 +151,14 @@ a{
       width:calc(150px*.8);
       height: calc(150px*.8)
   }
-
+  .disable__sizing__container{
+    width: 40px;
+    height: 40px;
+  }
+  .disable__sizing__div{
+  
+  }
+  .disable__sizing{
+    opacity: .8;
+  }
 }
