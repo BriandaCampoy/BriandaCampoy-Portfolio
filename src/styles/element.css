@@ -50,6 +50,10 @@
   font-size: var(--mdDsk);
   text-align: center;
 }
+.element-title--container{
+  height: 100px;
+  
+}
 .focus-element {
   display: flex;
   flex-direction: column;

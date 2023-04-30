@@ -16,6 +16,7 @@ const Element = ({ element, onMouseOver }) => {
         state: { element: element }
       }}
       onMouseOver={() => onMouseOver(element)}
+      onPointerOver={() => onMouseOver(element)}
     >
         <div className="element__content">
           <img

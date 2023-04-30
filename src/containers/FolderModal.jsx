@@ -8,7 +8,7 @@ const FolderModal = () => {
   const [hoverElement, setHoverElement] = useState();
   return (
     <div className="foldel-container">
-      {hoverElement?.name!=='' && (
+      {(hoverElement?.name!=='' && hoverElement!==undefined) && (
         <div className="focus-element--folder">
           <div className="element__content">
             <img

@@ -36,19 +36,22 @@ const ImagesProject = ({ images }) => {
           <Swiper
             slidesPerView={1}
             spaceBetween={30}
-            loop={true}
+            // loop={true}
             navigation={true}
             modules={[Pagination, Navigation]}
             className="mySwiper"
           >
             {images?.map((img) => (
               <SwiperSlide key={img + Math.floor(Math.random() * 2000)}>
-                <div
-                  className="projectImages__img--container"
-                  onClick={() => handleShowPhoto(img)}
-                >
-                  <img src={img} alt="" />
-                </div>
+                {/* <div className="projectImages__img--container"> */}
+                  {/* <div className="displayer"> */}
+                    <img
+                      src={img}
+                      alt=""
+                      onClick={() => handleShowPhoto(img)}
+                    />
+                  {/* </div> */}
+                {/* </div> */}
               </SwiperSlide>
             ))}
           </Swiper>

@@ -47,7 +47,7 @@ const Slider = ({ elements, hoverElement }) => {
         onClick={handleScroll}
         name="right"
       />
-      {scroll?.current?.scrollTop > 0 && (
+      {/* {scroll?.current?.scrollTop > 0 && ( */}
         <img
           src="https://res.cloudinary.com/dtn1pnbmu/image/upload/v1659479732/portfolio/assets/icons/right-arrow_sqzxno.svg"
           alt=""
@@ -55,7 +55,7 @@ const Slider = ({ elements, hoverElement }) => {
           onClick={handleScroll}
           name="left"
         />
-      )}
+      {/* )} */}
     </div>
   );
 };

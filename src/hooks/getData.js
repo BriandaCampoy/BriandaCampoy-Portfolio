@@ -1027,7 +1027,7 @@ const projects = {
         'https://res.cloudinary.com/dtn1pnbmu/image/upload/v1681696763/portfolio/assets/img_projects/AnimationGame/animationGame2_a0aemc.png',
         'https://res.cloudinary.com/dtn1pnbmu/image/upload/v1681696761/portfolio/assets/img_projects/AnimationGame/animationGame_vm8pli.png'
       ],
-      Technologies: [3, 7],
+      Technologies: [3, 7, 1],
       GithubRepository: 'https://github.com/BriandaCampoy/Animation-game',
       FigmaDesign: '',
       Collaborators: [],

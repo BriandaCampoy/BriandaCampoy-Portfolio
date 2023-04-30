@@ -29,23 +29,34 @@ const RepositoriesProject = ({ project }) => {
               </div>
             </NavLink>
           )}
-          {!project.FigmaDesign && !project.GithubRepository && 
-          <>
-            <h3 className='font-lg'>The access to GitHub and Figma from this project are either private or does not exist.</h3>
-          </>
-          }
+          {!project.FigmaDesign && !project.GithubRepository && (
+            <>
+              <h3 className="font-lg">
+                The access to GitHub and Figma from this project are either
+                private or does not exist.
+              </h3>
+            </>
+          )}
         </div>
         <div className="collaborators-container">
-          {project.Collaborators && 
-          <div className="collaborators">
-            {project.Collaborators.map((collaborator) =>(
-              <Link to={collaborator.profile} target="_blank" className="collaborator" key={collaborator.name}>
-                <img src={collaborator.icon} alt={collaborator.name} />
-                <p>{collaborator.name}</p>
-              </Link>
-            ))}
-          </div>
-          }
+          {project.Collaborators.length > 0 && (
+            <>
+              <p className="font-md">Collaborators</p>
+              <div className="collaborators">
+                {project.Collaborators.map((collaborator) => (
+                  <Link
+                    to={collaborator.profile}
+                    target="_blank"
+                    className="collaborator"
+                    key={collaborator.name}
+                  >
+                    <img src={collaborator.icon} alt={collaborator.name} />
+                    <p>{collaborator.name}</p>
+                  </Link>
+                ))}
+              </div>
+            </>
+          )}
         </div>
       </div>
     </section>

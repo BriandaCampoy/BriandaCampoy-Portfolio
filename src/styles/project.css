@@ -24,20 +24,24 @@
   width: 700px;
   padding: 10px;
 }
-
-.projectImages img{ 
+.projectImages img{
+  width: 680px;
   height: 380px;
-  /* width: 680px; */
-  border-radius: 10px;
+  object-fit:scale-down;	
+}
+
+.projectImages__img--container img{ 
+  height: 380px;
+  /* border-radius: 10px; */
 }
 .projectImages__img--container{
   height: 380px;
-  width: 680px;
-  border-radius: 10px;
+  max-width: 680px;
+  width: 100%;
   display: flex;
   justify-content: center;
+  margin: 0 100px;
 }
-
 .project-technologies{
   max-width:1200px;
   display:flex;
@@ -88,7 +92,10 @@
 .repositories div:nth-child(2){
   background-color:#242424;
 }
-
+.collaborators-container{
+  width:fit-content;
+  margin: 0 auto;
+}
 .collaborators{
   display: flex;
   justify-content: center;
@@ -139,9 +146,12 @@
       width: unset;
   }
   .projectImages img{
-      /* width: 400px; */
+      width: 380px;
       height: 270px;
-      border-radius: 10px;
+      object-fit:scale-down;	
+  }
+  .projectImages__img--container{
+    /* display:inherit; */
   }
 
 }

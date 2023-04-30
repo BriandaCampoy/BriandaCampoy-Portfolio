@@ -69,5 +69,7 @@
     width: calc(var(--ElementSizeXL) * 0.7);
     height: calc(var(--ElementSizeXL) * 0.7);
   }
-
+  .modalSelector:active{
+    opacity: 1;
+  }
 }

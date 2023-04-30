@@ -15,6 +15,7 @@ const FolderElement = ({ element, setHover }) => {
             state: { element: element }
           }}
           onMouseOver={() => setHover(element)}
+          onPointerOver={() => setHover(element)}
           onClick={unstopScroll}
         >
           <div className="modal__element__content">
